@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>편지</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+            <img src="/santa_img" width="186px" height="186px">
+            <h1 class="title">코드입력</h1>
+
+            <form action="/login_check" method="POST">
+                <input type="text" name="password" placeholder="코드" autocomplete="off">
+                <br>
+                <input type="submit" value="편지쓰기" class="button">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+<style>
+
+    @font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    body, html {
+        overflow-x: hidden;
+        height: 100%;
+    }
+
+    body {
+        display: table;
+        margin: 0 auto;
+    }
+
+    .container {
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .main {
+        text-align: center;
+
+        margin: auto 0;
+    }
+
+    .title {
+        font-family: 'KyoboHand';
+        letter-spacing: 5px;
+        font-weight: lighter;
+        font-size: 60px;
+    }
+
+    input[type=text] {
+        text-align: center;
+        font-family: 'KyoboHand';
+        width: 186px;
+        height: 40px;
+        border: 2px solid #aaaaaa;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: border-box;
+        transition: .3s;
+
+        font-size: 25px;
+
+    }
+
+    input[type=text]:focus {
+        border-color: dodgerblue;
+        box-shadow: 0 0 2px 0 dodgerblue;
+    }
+
+    .button {
+        text-align: center;
+        font-family: 'KyoboHand';
+        font-size: 25px;
+        line-height: 10px;
+        width: 186px;
+        height: 40px;
+        border: 2px solid dodgerblue;
+        border-radius: 4px;
+        margin: 8px 0;
+        outline: none;
+        padding: 8px;
+        box-sizing: 8px;
+        transition: .3s;
+        color: white;
+        background-color: dodgerblue;
+    }
+
+    .buuton:hover {
+        border-color: dodgerblue;
+        box-shadow: 0 0 8px 0 dodgerblue;
+    }
+   
+
+</style>
+</html>
